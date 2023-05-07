@@ -1,0 +1,32 @@
+ejercicio 4 unidad 2 
+El código de Python que generé define una clase de Ventana con los atributos dados e implementa los 
+métodos necesarios. El método __init__ inicializa los atributos con valores predeterminados y aplica 
+las reglas comerciales dadas. El método del motor mueve la ventana en un desplazamiento dado en las 
+direcciones x e y. El método __str__ devuelve una representación de cadena de la ventana. Los atributos 
+x1 e y1 se inicializan con un valor predeterminado de 0, y los atributos x2 e y2 se inicializan con un
+ valor predeterminado de 100. Las funciones max y min se utilizan para garantizar que los valores de x1, y1, x2 e y2 
+están dentro de los límites dados. Si el valor de x1 es mayor o igual que el valor de x2, el valor de x1
+ se establece en x2 - 1. Si el valor de y1 es mayor o igual que el valor de y2, el valor de y1 se establece en y2 - 1.
+ Esto asegura que la ventana tenga un área distinta de cero. El método del motor toma dos argumentos opcionales dx y dy
+ que representan el desplazamiento en las direcciones x e y, respectivamente. El método actualiza los valores de x1, y1, x2 e y2 
+sumando los valores de desplazamiento y aplicando los límites dados. El método __str__ devuelve una representación de cadena de la 
+ventana en el formato título: (x1, y1) - (x2, y2). En general, el código define una clase de Ventana que se puede usar para crear 
+ventanas con atributos dados y realizar operaciones en ellas. 1 toronto 2 computadora portátil 3 tutorialesprogramacionya 4
+Los nuevos métodos agregados son moverDerecha, moverIzquierda, bajar, subir, getTitulo, alto, ancho y mostrar.
+ El método moverDerecha mueve la ventana hacia la derecha en un desplazamiento dado en la dirección x. 
+El método moverIzquierda mueve la ventana hacia la izquierda un desplazamiento dado en la dirección x. 
+El método bajar mueve la ventana hacia abajo en un desplazamiento dado en la dirección y. 
+El método subir mueve la ventana hacia arriba en un desplazamiento dado en la dirección y. 
+Los métodos getTitulo, alto y ancho devuelven el título, la altura y el ancho de la ventana, respectivamente. 
+El método mostrar imprime los atributos de la ventana en el 
+formato título: (x1, y1) - (x2, y2). El bloque if __name__ == '__main__': crea y muestra tres ventanas con diferentes atributos y 
+realiza operaciones en ellas utilizando los nuevos métodos.
+
+
+que hace la funcion max en el __init__:
+La línea de código self.x1 = max(0, x1) establece el valor del atributo x1 de una instancia de Ventana al máximo de 0 y el 
+valor del argumento x1 se pasa al método __init__. La función max devuelve el valor máximo de sus argumentos. En este caso, 
+devuelve 0 si el valor de x1 es negativo, o el valor de x1 si no es negativo. Esto asegura que el valor de x1 sea siempre mayor o 
+igual a 0, como lo exigen las reglas comerciales dadas. El parámetro self se refiere a la instancia de la clase Ventana a la que 
+se llama el método. El método __init__ es un método especial que se llama cuando se crea una nueva instancia de la clase. 
+Inicializa los atributos de la instancia con los argumentos dados y aplica las reglas de negocios dadas
